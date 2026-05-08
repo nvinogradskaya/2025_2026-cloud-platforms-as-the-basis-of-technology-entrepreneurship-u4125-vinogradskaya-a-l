@@ -101,15 +101,7 @@ AI будем использовать так:
 
 # Схема инфраструктуры — Стадия 1
 
-На схеме должны присутствовать:
-
-* User
-* Cloud Run Frontend
-* Cloud Run Backend
-* Cloud SQL
-* Cloud Storage
-* Vertex AI API
-* Cloud Logging / Monitoring
+<img width="1684" height="668" alt="image" src="https://github.com/user-attachments/assets/fb2d58dd-d348-4593-bf7f-4fe2d26d123f" />
 
 ---
 
