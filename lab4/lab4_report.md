@@ -148,19 +148,8 @@ Cloud Storage используется для хранения файлов по
 
 ## Архитектурный подход
 
-На стадии тестирования приложение начинает разделяться на отдельные сервисы:
+<img width="946" height="537" alt="image" src="https://github.com/user-attachments/assets/8a9a4c6a-87a6-48e5-8922-0041cb0a7623" />
 
-* frontend;
-* backend API;
-* AI-service;
-* notification-service.
-
-Добавляются:
-
-* Redis;
-* Load Balancer;
-* CI/CD;
-* alerting.
 
 ---
 
@@ -253,20 +242,6 @@ Read Replica позволяет снизить нагрузку на основ�
 
 ## Архитектурный подход
 
-На production-этапе backend переходит в Kubernetes-инфраструктуру.
-
-Frontend остается на Cloud Run, так как:
-
-* stateless;
-* хорошо масштабируется;
-* дешевле в обслуживании.
-
-Backend переносится в GKE Autopilot:
-
-* микросервисная архитектура;
-* гибкое масштабирование;
-* более эффективное использование ресурсов.
-
 ---
 
 # Инфраструктура — Стадия 3
@@ -293,23 +268,7 @@ Backend переносится в GKE Autopilot:
 
 # Схема инфраструктуры — Стадия 3
 
-На схеме должны присутствовать:
-
-* Users
-* Cloud CDN
-* HTTPS Load Balancer
-* Cloud Armor
-* Cloud Run Frontend
-* GKE Cluster
-* AI Service
-* Pub/Sub
-* Redis HA
-* Cloud SQL HA + replicas
-* Cloud Storage
-* Vertex AI Endpoints
-* BigQuery
-* Monitoring / Logging / Trace
-* Secret Manager
+<img width="917" height="361" alt="image" src="https://github.com/user-attachments/assets/b2a314a4-587b-43d6-9e84-bb7a0a3ecd1c" />
 
 ---
 
